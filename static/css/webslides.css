@@ -1960,7 +1960,9 @@ Block Thumbnails li+.overlay+image
 img size recommended:800x600px
 =================================================== */
 .flexblock.gallery li {
-  margin-bottom: 4.8rem; }
+  margin-bottom: 4.8rem;
+  background-color: white;
+}
   .flexblock.gallery li:nth-child(n+4) {
     -webkit-box-flex: inherit;
         -ms-flex: inherit;
