@@ -19,24 +19,6 @@
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
 
-    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
-
-    <!-- FACEBOOK -->
-    <meta property="og:url" content="http://your-url.com/"> <!-- YOUR URL -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
-    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma."> <!-- EDIT -->
-    <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
-    <meta property="og:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
-
-    <!-- TWITTER -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
-    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
-    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
-    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use."> <!-- EDIT -->
-    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
-
     <!-- FAVICONS -->
     <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
     <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
@@ -50,7 +32,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
   </head>
-
+ 
   <body>
     <header role="banner">
       <nav role="navigation">
@@ -63,7 +45,7 @@
     </header>
 
     <main role="main">
-      <article id="" class="vertical">
+      <article id="article" class="vertical">
         <!-- Quick Guide
           - Each parent <section> in the <article id="webslides"> element is an individual slide.
           - Vertical sliding = <article id="webslides" class="vertical">
@@ -87,9 +69,9 @@
           <div class="wrap zoomIn">
             <ul class="flexblock gallery">
               <li>
-                <a href="index.html" title="Why WebSlides?">
+                <a href="volume-L1.html">
                   <figure>
-                    <img alt="Simpl." src="../static/images/lynx/2019-volume-L1-B1.jpg" onmouseover="this.src='../static/images/lynx/2019-volume-L1-B2.jpg';" onmouseout="this.src='../static/images/lynx/2019-volume-L1-B1.jpg';">>
+                    <img alt="LYNX L1 Volume" src="../static/images/lynx/2019-volume-L1-B1.jpg" onmouseover="this.src='../static/images/lynx/2019-volume-L1-B2.jpg';" onmouseout="this.src='../static/images/lynx/2019-volume-L1-B1.jpg';">
                     <figcaption>
                         <h2>L1 Volume</h2>
                         <p align="right">118×40×10cm</p>
@@ -99,9 +81,9 @@
                </a>
               </li>
               <li>
-                <a href="index.html" title="Why WebSlides?">
+                <a href="volume-L2.html">
                   <figure>
-                    <img alt="Simpl." src="../static/images/lynx/2019-volume-L2-B2.jpg" onmouseover="this.src='../static/images/lynx/2019-volume-L2-B2.jpg';" onmouseout="this.src='../static/images/lynx/2019-volume-L2-B1.jpg';">>
+                    <img alt="LYNX L2 Volume" src="../static/images/lynx/2019-volume-L2-B2.jpg" onmouseover="this.src='../static/images/lynx/2019-volume-L2-B2.jpg';" onmouseout="this.src='../static/images/lynx/2019-volume-L2-B1.jpg';">>
                     <figcaption>
                         <h2>L2 Volume</h2>
                         <p align="right">93×32×8cm</p>
@@ -125,7 +107,7 @@
           <div class="wrap zoomIn">
             <ul class="flexblock gallery">
               <li>
-                <a href="index.html" title="Why WebSlides?">
+                <a href="../index.html">
                   <figure>
                     <img alt="Simpl." src="../static/images/lynx/2019-volume-L11-B1.jpg" onmouseover="this.src='../static/images/lynx/2019-volume-L11-B2.jpg';" onmouseout="this.src='../static/images/lynx/2019-volume-L11-B1.jpg';">
                     <figcaption>
@@ -464,6 +446,14 @@
     <script src="../static/js/webslides.js"></script>
     <script>
         window.ws = new WebSlides({ minWheelDelta: 30, loop: false });
+    </script>
+
+    <script type='text/javascript'>
+        var autoscroll = true;
+        window.addEventListener("scroll", function() { autoscroll = false });
+        if (document.getElementById("article").scrollTop === 0) { 
+           setTimeout('if (autoscroll) { window.scrollTo({top: screen.height, behavior: "smooth"}) };', 1000);
+        }
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
