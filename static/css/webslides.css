@@ -410,9 +410,7 @@ nav a[rel='external'] em,
             transform: rotate(-3deg); }
 
 /*=== 1.1 WRAP/CONTAINER === */
-.wrap,
-header nav,
-footer nav {
+.wrap {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -423,7 +421,14 @@ footer nav {
     .wrap,
     header nav,
     footer nav {
-      width: 90%; } }
+      width: 100%; } }
+
+header nav, footer nav {
+   width: 100%;
+   position: fixed;
+   right: 0;
+   top 0;
+}
 
 .frame,
 .shadow {
@@ -1278,7 +1283,7 @@ https://github.com/webslides/webslides/issues/57 -- */
 header,
 footer,
 #navigation {
-  padding: 2.4rem;
+  /* padding: 2.4rem; */
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   width: 100%; }
@@ -1325,19 +1330,29 @@ header[role='banner'] {
 .logo {
   text-transform: lowercase; }
   .logo a {
-    background: url("../images/logos/logo.svg") no-repeat 0 0;
-    background-size: 4.8rem;
+    background: url("../images/logos/logo.jpg") no-repeat 0 0;
+    background-size: 224px;
     float: left;
-    height: 4.8rem;
+    height: auto;
+    margin-top: 2.6rem;
+    margin-left: 2.6rem;
     text-indent: -4000px;
+    border-radius: 3%;
     /*If you remove text-indent and add: */
     /*padding-left: 6rem;*/
     vertical-align: middle;
-    width: 4.8rem; }
+    width: 224px; }
 
 /*=========================================
 4. Navigation
 =========================================== */
+ 
+nav {
+   background-color: white;
+   min-height: 10rem;
+   top: 0;
+}
+
 /*=== 4.1. Navbars === */
 nav ul {
   display: -webkit-box;
@@ -1357,9 +1372,12 @@ nav ul {
   /* justify-content: space-between; */
   /*====separated columns centered li a====*/
   /*justify-content: space-around;*/ }
+
   nav ul li {
     float: left;
     list-style: none;
+    margin-top: 2.6rem;
+    margin-bottom: 2.6rem;
     position: relative; }
 
 nav ul li:first-child,
@@ -1385,7 +1403,8 @@ header nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0; }
+  margin: 0;
+ }
 
 nav.aligncenter ul,
 .aligncenter nav ul {
@@ -1411,6 +1430,8 @@ nav.navbar ul li {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; } }
+
+
 
 /*============================================
 5. SLIDES (Full Screen)
@@ -1525,7 +1546,7 @@ form[class*='bg-'] {
   left: 0;
   position: absolute;
   right: 0;
-  top: 0; }
+  top: 10rem; }
 
 /*=== BG Positions === */
 .background {
@@ -3320,10 +3341,10 @@ nav[role='navigation'] li.active a {
   color: #fff; }
 
 nav[role='navigation'] li a {
-  background-color: rgba(50, 50, 50, 0.9);
-  color: #fff; }
+  background-color: rgba(50, 50, 50, 0.0);
+  color: black; }
   nav[role='navigation'] li a:hover {
-    background-color: rgba(50, 50, 50, 0.7); }
+    color: rgba(50, 50, 50, 0.7); }
 
 nav li.twitter a:hover {
   background-color: #1da1f3; }
