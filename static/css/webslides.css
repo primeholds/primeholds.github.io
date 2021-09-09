@@ -423,11 +423,17 @@ nav a[rel='external'] em,
     footer nav {
       width: 100%; } }
 
-header nav, footer nav {
+header nav {
    width: 100%;
    position: fixed;
    right: 0;
    top 0;
+}
+
+footer nav{
+   max-width: 100%;
+   position: fixed;
+   right: 0;
 }
 
 .frame,
@@ -1331,17 +1337,17 @@ header[role='banner'] {
   text-transform: lowercase; }
   .logo a {
     background: url("../images/logos/logo.jpg") no-repeat 0 0;
-    background-size: 224px;
+    background-size: 16rem;
     float: left;
     height: auto;
-    margin-top: 2.6rem;
-    margin-left: 2.6rem;
+    margin-top: 1.8rem;
+    margin-left: 3rem;
     text-indent: -4000px;
     border-radius: 3%;
     /*If you remove text-indent and add: */
     /*padding-left: 6rem;*/
     vertical-align: middle;
-    width: 224px; }
+    width: 16rem; }
 
 /*=========================================
 4. Navigation
@@ -1349,7 +1355,7 @@ header[role='banner'] {
  
 nav {
    background-color: white;
-   min-height: 10rem;
+   min-height: 6rem;
    top: 0;
 }
 
@@ -1373,12 +1379,13 @@ nav ul {
   /*====separated columns centered li a====*/
   /*justify-content: space-around;*/ }
 
-  nav ul li {
+nav ul li {
     float: left;
     list-style: none;
-    margin-top: 2.6rem;
-    margin-bottom: 2.6rem;
-    position: relative; }
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
 
 nav ul li:first-child,
 nav[role='navigation'] ul li {
@@ -1546,7 +1553,7 @@ form[class*='bg-'] {
   left: 0;
   position: absolute;
   right: 0;
-  top: 10rem; }
+  top: 6rem; }
 
 /*=== BG Positions === */
 .background {
@@ -1915,7 +1922,7 @@ About, Philosophy...
 6.5 Specs/Items: <ul class="flexblock specs">
 ======================================================= */
 .specs li {
-  text-align: left;
+  text-align: center;
   width: 100%; }
   .specs li:after {
     bottom: -2.4rem;
@@ -3792,7 +3799,7 @@ Slides (Counter/Arrows)
 Footer
 ============================== */
 footer[role='contentinfo'] {
-  background-color: #fff; }
+  background-color: gray; }
 
 /*============================
 Slides Index
