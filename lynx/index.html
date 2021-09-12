@@ -1,14 +1,13 @@
 <!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>PrimeHolds</title>
-    <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
 
     <!-- URL CANONICAL -->
-    <!-- <link rel="canonical" href="https://primeholds.com"> -->
+    <link rel="canonical" href="https://primeholds.com">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
@@ -36,42 +35,24 @@
   <body>
     <header>
       <nav role="navigation">
-        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+        <p class="logo"><a href="index.html" title="PrimeHolds">WebSlides</a></p>
         <ul>
-          <li>
-            <a href="../brands.html">Marken</a>
-          </li>
-          <li>
-            <a href="../downloads.html">Downloads</a>
-          </li>
-          <li>
-              <a href="https://twitter.com/webslides">Kontakt</a>
-          </li>
-          <li>
-            <a href="https://instagram.com/primeholds"><img style="width: 32px; margin: 7px auto 7px;" src="../static/images/icon-instagram.png"/></a>
-          </li>
-          <li>
-            <a href="https://instagram.com/primeholds"><img style="width: 32px; margin: 7px auto 7px;" src="../static/images/icon-email.png"/></a>
-          </li>
+           <li class="nav-item"><a href="../brands.html">Marken</a></li>
+           <li class="nav-item"><a href="../downloads.html">Downloads</a></li>
+           <li class="nav-item"><a href="mailto:erik-primeholds@gmx.de">Kontakt</a></li>
+           <li class="nav-item"><a href="https://instagram.com/primeholds"><img style="width: 32px; margin: 7px auto 7px;" src="../static/images/icon-instagram.png" alt="Instagram"/></a></li>
+           <li class="nav-item"><a href="mailto:erik-primeholds@gmx.de"><img style="width: 32px; margin: 7px auto 7px;" src="../static/images/icon-email.png" alt="EMail"/></a></li>
         </ul>
       </nav>
     </header>
 
     <main role="main">
       <article id="article" class="vertical">
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
-
         <section>
           <span class="background" style="background-image:url('../static/images/lynx/lynx-logobild.jpg')"></span>
-           <!--.wrap = container (width: 90%) -->
            <div class="wrap">
              <h1 style="color:#FFFFFF"><strong></strong></h1>
            </div>
-           <!-- .end .wrap -->
          </section>
  
         <section>
@@ -447,11 +428,21 @@
    </main>
     <!-- end main -->
 
-     <footer role="contentinfo">
+    <footer role="contentinfo">
       <div class="wrap">
-        <p>* Alle Preise beinhalten <b>nicht</b> die Mehrwertsteuer.</p>
+          <div class="contact-info">
+               <p class="footer-text"><a class="footer-text" href=mailto:erik-primeholds@gmx.de>Erik Heldmann</a> &emsp;  <a class="footer-text" href=mailto:jan-primeholds@gmx.de>Jan Wagner</a></p>
+           </div>
+           <center>
+               <img class="logo-bottom" src="../static/images/logos/logo-small.png" alt="logo">
+               <p style="font-size: 0.7em; color: #fafafa">© 2021 primeholds, all rights reserved.</p>
+           </center>
+           <div class="legal-info">
+               <p><a class="footer-text" href="../privacy.html">Datenschutz</a> &emsp; <a class="footer-text" href="../legal.html">Haftungsausschluss</a> &emsp; <a class="footer-text" href="../impressum.html">Impressum</a></p>
+           </div>
       </div>
-    </footer>  -->
+    </footer>
+
 
     <!-- Required -->
     <script src="../static/js/webslides.js"></script>
