@@ -3946,7 +3946,7 @@ Slides Index
 }
 
 
-.mobile, .desktop {}
+.mobile, .desktop, .desktop-large {}
 
 @media only screen and (min-width: 640px) {
   .mobile { 
@@ -3961,4 +3961,12 @@ Slides Index
                visibility: hidden;
            }
 }
+
+@media only screen and (max-width: 1024px) {
+  .desktop-large {
+               display: none;
+               visibility: hidden;
+           }
+}
+
 
