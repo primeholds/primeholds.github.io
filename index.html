@@ -1,11 +1,93 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="de">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>PrimeHolds</title>
+
+    <!-- URL CANONICAL -->
+    <link rel="canonical" href="https://primeholds.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
   </head>
 
   <body>
-    <h1>Hello</h1>
-    <p>This site is currently under construction. Stay tuned :)</p>
+    <header>
+      <nav role="navigation">
+        <p class="logo"><a href="index.html" title="PrimeHolds">WebSlides</a></p>
+        <ul>
+           <li class="nav-item"><a href="brands.html">Marken</a></li>
+           <li class="nav-item"><a href="downloads.html">Downloads</a></li>
+           <li class="nav-item"><a href="contact.html">Kontakt</a></li>
+           <li class="nav-item"><a href="https://instagram.com/primeholds"><img style="width: 32px; margin: 7px auto 7px;" src="static/images/icon-instagram.png" alt="Instagram"/></a></li>
+           <li class="nav-item"><a href="mailto:erik-primeholds@gmx.de"><img style="width: 32px; margin: 7px auto 7px;" src="static/images/icon-email.png" alt="EMail"/></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article class="vertical">
+        <section>
+          <span class="background" style="background-image:url('static/images/primeholds-startbild1.png')"></span>
+        </section>
+ 
+        <section>
+          <div class="wrap zoomIn">
+            <ul class="flexblock gallery">
+              <li><figure><a href="ready/index.html" title="READY"><img alt="READY" src="static/images/ready/logo.png"></a></figure></li>
+              <li><figure><a href="simpl/index.html" title="Simpl"><img alt="Simpl" src="static/images/simpl/logo.png"></a></figure></li>
+              <li><figure><a href="lynx/index.html" title="LYNX"><img alt="LYNX" src="static/images/lynx/logo.png"></a></figure></li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="wrap">
+          <div class="contact-info">
+              <p style="color: white; line-height: 0.7">Erik Heldmann &emsp; &emsp; &emsp; &emsp; &emsp;Jan Wagner</p>
+              <p style="color: white">erik-primeholds@gmx.de &emsp; jan-primeholds@gmx.de</p>
+           </div>
+           <center>
+               <img class="logo-bottom" src="static/images/logos/logo-small.png" alt="logo">
+               <p style="font-size: 0.7em; color: #fafafa">© 2021 primeholds, all rights reserved.</p>
+           </center>
+           <div class="legal-info">
+               <p><a class="footer-text" href="legal.html">Haftungsausschluss</a> &emsp; <a class="footer-text" href="impressum.html">Impressum</a></p>
+           </div>
+      </div>
+    </footer>
+    
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+        window.ws = new WebSlides({ minWheelDelta: 30, loop: false });
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
   </body>
-</html> 
+</html>
