@@ -3897,6 +3897,10 @@ Slides Index
   border-radius: 3px 0px 0px 3px;
 }
 
+@media screen and (max-width: 768px) {
+   .all-product, .prev-product, .next-product { visibility: hidden; }   
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover, .all-product:hover, .prev-product:hover, .next-product:hover {
   background-color: rgba(0,0,0,0.8);
