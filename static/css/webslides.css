@@ -3945,3 +3945,9 @@ Slides Index
               }
 }
 
+.no-mobile {}
+
+@media only screen and (max-width: 640px) {
+  .no-mobile { display: none; }
+}
+
